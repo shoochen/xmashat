@@ -1,0 +1,17 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.33.5",
+    "tencentcloud-sdk-nodejs": "^4.0.996",
+    "wx-server-sdk": "^3.0.1"
+  }
+}

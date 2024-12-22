@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<navigation-bar title="人人都有圣诞帽" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="container">
+  <!-- 上传区域 -->
+  <view class="upload-area" wx:if="{{!previewImage}}">
+    <button class="upload-btn" bindtap="chooseImage" disabled="{{processing}}">
+      <image class="upload-icon" src="/assets/icons/upload.png"></image>
+      <text>{{processing ? '处理中...' : '上传图片'}}</text>
+    </button>
+    <text class="upload-tip">支持识别人物和宠物哦～</text>
+  </view>
+
+  <!-- 预览区域 -->
+  <view class="preview-area" wx:if="{{previewImage}}">
+    <view class="preview-container">
+      <image class="preview-image" src="{{previewImage}}" mode="widthFix"></image>
+    </view>
+    <view class="action-buttons">
+      <button class="action-btn" bindtap="saveImage">保存到相册</button>
+      <button class="action-btn share-btn" open-type="share">分享给好友</button>
+      <button class="action-btn" bindtap="resetImage">重新上传</button>
+    </view>
+  </view>
+</view>
