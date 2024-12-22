@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 人人都有圣诞帽
 
 一个有趣的微信小程序，可以为照片中的人物（或宠物）自动添加圣诞帽。
@@ -30,7 +29,10 @@
 - AI能力：腾讯云人脸识别API
 
 ## 项目结构 
-=======
 # xmashat
 Everyone has a xmas hat
->>>>>>> 539695ba4f2945a8b5731f7bf2ad4224a3e84501
+
+## 配置说明
+
+1. 复制 `config/secret.example.js` 为 `config/secret.js`
+2. 在 `secret.js` 中填入你的实际配置信息

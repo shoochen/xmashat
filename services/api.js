@@ -1,5 +1,3 @@
-import { TENCENT_SECRET_ID, TENCENT_SECRET_KEY } from '../config/secret';
-
 const uploadWithRetry = async (filePath, retries = 3) => {
   for (let i = 0; i < retries; i++) {
     try {
@@ -40,7 +38,7 @@ export const uploadImage = async (filePath) => {
 
     // 检查云函数返回结果
     if (!result || !result.result) {
-      console.error('云函���返回结果:', result);
+      console.error('云函数返回结果:', result);
       throw new Error('云函数返回结果为空');
     }
 

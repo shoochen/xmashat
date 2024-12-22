@@ -1,1 +1,8 @@
+# 敏感配置文件
 config/secret.js
+config/secret.*
+
+# 其他常见需要忽略的文件
+node_modules/
+.DS_Store
+*.log
